@@ -19,12 +19,6 @@ public class RandomStringGenerator {
 		}
 		String s = sb.toString();
 		switch(Cap){
-			case 1:
-				s = s.toUpperCase();
-				break;
-			case 2: 
-				s = s.toLowerCase();
-				break;
 			case 0:
 				char[] chars = s.toCharArray();
 				StringBuilder sb2 = new StringBuilder();
@@ -36,6 +30,12 @@ public class RandomStringGenerator {
 					}
 				}
 				return sb2.toString();
+			case 1:
+				s = s.toUpperCase();
+				break;
+			case 2: 
+				s = s.toLowerCase();
+				break;
 		}
 		return s;
 	}
