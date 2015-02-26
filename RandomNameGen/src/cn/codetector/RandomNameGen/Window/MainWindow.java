@@ -20,6 +20,10 @@ import javax.swing.JRadioButton;
 import cn.codetector.RandomNameGen.Generator.RandomStringGenerator;
 
 public class MainWindow extends JFrame{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4701131840222314643L;
 	public MainWindow() {
 	}
 	public int selected = 0;
