@@ -20,6 +20,10 @@ import javax.swing.JRadioButton;
 import cn.codetector.RandomNameGen.Generator.RandomStringGenerator;
 
 public class MainWindow extends JFrame{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4701131840222314643L;
 	public MainWindow() {
 	}
 	public int selected = 0;
@@ -111,6 +115,7 @@ public class MainWindow extends JFrame{
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
+					
 					SetOut(RandomStringGenerator.GenerateRandomString(selected, Integer.parseInt(getLen())));
 				}catch(NumberFormatException ex){
 					JOptionPane.showMessageDialog(null, "Dude, Enter a Int not a String/Letter!!!!!");
